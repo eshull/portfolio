@@ -5,6 +5,12 @@
 
 @import "bootstrap";
 
+$font-post:  sans-serif;
+$btn-background: lightgrey;
+$box-shadow: 20px 20px 50px grey;
+
+
+
 .header {
   display: flex;
   flex-direction: row;
@@ -16,6 +22,7 @@
   padding: 30px;
   color: white;
   width: 33%;
+  box-shadow: $box-shadow;
 }
 
 .des_header {
@@ -24,6 +31,16 @@
   padding: 30px;
   color: white;
   width: 33%;
+  box-shadow: $box-shadow;
+}
+
+.post {
+  font-family: $font-post;
+  background: white;
+  margin: 60px;
+  border-radius: 4px;
+  padding: 20px;
+  color: black;
 }
 
 .author {
