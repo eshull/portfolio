@@ -1,8 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-
-<h1>Posts</h1>
-
 <div class="header row col-md-10">
   <div class="dev_header">
     <h2>DEVELOPMENT</h2>
@@ -15,30 +12,53 @@
 <div class="col-md-10 postcolumn">
 
   <div class="post">
-    <div class="post_info">
-      <p class="author" >Author: </p>
-      <p class="title">Title: </p>
-      <p class="category">Category: </p>
-      <p class="content">content</p>
-    </div>
     <div class="post_image">
-      <img class="img-fluid" src="/images/similitude_typeface.png" alt="type specimen" />
       <%= image_tag("similitude_typeface.png", :alt => "type", :class => "img-fluid") %>
     </div>
+    <div class="post_info">
+      <div class="info_box">
+        <div class="info">
+          <p class="author" >Author: </p>
+          <p class="title">Title: </p>
+          <p class="category">Category: </p>
+          <p class="content">content</p>
+        </div>
+      </div>
+    </div>
+
 
   </div>
   <% @posts.each do |post| %>
     <div class="post">
-      <p class="author" >Author: <%= post.author %></p>
+      <div class="post_image">
+        <%= image_tag("similitude_typeface.png", :alt => "type", :class => "img-fluid") %>
+      </div>
+      <div class="post_info">
+        <div class="info_box">
+          <div class="info">
+            <p class="author" >Author: <%= post.author %></p>
+            <p class="title">Title: <%= post.title %></p>
+            <p class="category">Category: <%= post.category %></p>
+            <p class="content"><%= post.content %></p>
+            <p><%= link_to 'Show', post %></p>
+            <p><%= link_to 'Edit', edit_post_path(post) %></p>
+            <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          </div>
+        </div>
+
+
+
+      <!-- <p class="author" >Author: <%= post.author %></p>
       <p class="title">Title: <%= post.title %></p>
       <p class="category">Category: <%= post.category %></p>
       <p class="content"><%= post.content %></p>
       <p><%= link_to 'Show', post %></p>
       <p><%= link_to 'Edit', edit_post_path(post) %></p>
-      <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p> -->
+    </div>
     </div>
   <% end %>
-</div>
+
 <!-- <table>
   <thead>
     <tr>
