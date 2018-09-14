@@ -1,7 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
-
+<div class="col-md-10 postcolumn">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <p>Author: <%= post.author %></p>
+      <p>Title: <%= post.title %></p>
+      <p>Category: <%= post.category %></p>
+      <p><%= post.content %></p>
+      <p><%= link_to 'Show', post %></p>
+      <p><%= link_to 'Edit', edit_post_path(post) %></p>
+      <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </div>
+  <% end %>
+</div>
 <table>
   <thead>
     <tr>
