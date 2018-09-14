@@ -1,18 +1,31 @@
 <p id="notice"><%= notice %></p>
 
+
 <h1>Posts</h1>
+
 <div class="header row col-md-10">
   <div class="dev_header">
     <h2>DEVELOPMENT</h2>
   </div>
-
   <div class="des_header">
     <h2>DESIGN</h2>
   </div>
-
 </div>
 
 <div class="col-md-10 postcolumn">
+
+  <div class="post">
+    <div class="post_info">
+      <p class="author" >Author: </p>
+      <p class="title">Title: </p>
+      <p class="category">Category: </p>
+      <p class="content">content</p>
+    </div>
+    <div class="post_image">
+      <%= image_tag 'https://www.dropbox.com/s/azrm2yxmq1dkb9i/Screen%20Shot%202018-07-26%20at%2011.30.03%20PM.png?dl=0' %>
+    </div>
+
+  </div>
   <% @posts.each do |post| %>
     <div class="post">
       <p class="author" >Author: <%= post.author %></p>
@@ -25,7 +38,7 @@
     </div>
   <% end %>
 </div>
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Author</th>
@@ -47,8 +60,4 @@
       </tr>
     <% end %>
   </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+</table> -->
