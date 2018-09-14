@@ -1,3 +1,43 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bootstrap";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dev_header {
+  background: black;
+  border: solid 3px white;
+  padding: 30px;
+  color: white;
+  width: 33%;
+}
+
+.des_header {
+  background: black;
+  border: solid 3px white;
+  padding: 30px;
+  color: white;
+  width: 33%;
+}
+
+.author {
+  font-size: 2opx;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.category {
+  font-size: 15px;
+}
+
+.content {
+  font-size: 13px;
+}
