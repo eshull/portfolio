@@ -5,7 +5,7 @@
 
 @import "bootstrap";
 
-$font-post:  sans-serif;
+$font-post:  gineso, sans-serif;
 $btn-background: lightgrey;
 $box-shadow: 20px 20px 50px grey;
 $info-margin: 10px;
@@ -59,7 +59,8 @@ $info-margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%
+  width: 40%;
+  padding: 55px;
 }
 
 .info_box {
@@ -81,17 +82,26 @@ $info-margin: 10px;
   width: 100%
 }
 
-.author {
-  font-size: 22px;
-  margin-top: $info-margin;
-}
-
 .title {
+  font-family: $font-post;
+  font-style: normal;
+  font-weight: 900;
   font-size: 35px;
   margin-top: $info-margin;
 }
 
+.author {
+  font-family: $font-post;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 22px;
+  margin-top: $info-margin;
+}
+
 .category {
+  font-family: $font-post;
+  font-style: italic;
+  font-weight: 100;
   font-size: 25px;
   margin-top: $info-margin;
 }
