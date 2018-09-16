@@ -16,11 +16,16 @@
 @import "bootstrap";
 
 body {
-  background: #1e2a54;
+  background: #1f2023;
 }
 
 .nav {
-  background: #030c29;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+  background: #101115;
   color: white;
   font-family: gineso, sans-serif;
   border: solid 1px white;
@@ -29,6 +34,8 @@ body {
   flex-direction: column;
   box-shadow: 20px 20px 50px black;
   justify-content: space-around;
+  width: 14%;
+  padding: 18px;
 }
 
 .postcolumn {

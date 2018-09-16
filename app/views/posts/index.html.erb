@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<div class="col-md-2">
+</div>
 <div class="header row col-md-10">
   <div class="dev_header">
     <h2>DEVELOPMENT</h2>
@@ -9,12 +10,7 @@
   </div>
 </div>
 
-<div class="col-md-10 postcolumn">
 
-
-
-
-  </div>
   <% @posts.each do |post| %>
     <div class="post">
       <div class="post_image">
@@ -26,7 +22,7 @@
             <p class="title">Title: <%= post.title %></p>
             <p class="author" >Author: <%= post.author %></p>
             <p class="category">Category: <%= post.category %></p>
-            <p class="category">Category: <%= post.url %></p>
+            <p class="category"> <%= link_to post.url %></p>
             <p class="content"><%= post.content %></p>
             <p><%= link_to 'Show', post %></p>
             <p><%= link_to 'Edit', edit_post_path(post) %></p>
