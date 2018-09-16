@@ -11,27 +11,14 @@
 
 <div class="col-md-10 postcolumn">
 
-  <div class="post">
-    <div class="post_image">
-      <%= image_tag("similitude_typeface.png", :alt => "type", :class => "img-fluid") %>
-    </div>
-    <div class="post_info">
-      <div class="info_box">
-        <div class="info">
-          <p class="author" >Author: </p>
-          <p class="title">Title: </p>
-          <p class="category">Category: </p>
-          <p class="content">content</p>
-        </div>
-      </div>
-    </div>
+
 
 
   </div>
   <% @posts.each do |post| %>
     <div class="post">
       <div class="post_image">
-        <%= image_tag("similitude_typeface.png", :alt => "type", :class => "img-fluid") %>
+        <%= image_tag( post.img_tag, :alt => "type", :class => "img-fluid") %>
       </div>
       <div class="post_info">
         <div class="info_box">
@@ -39,6 +26,7 @@
             <p class="title">Title: <%= post.title %></p>
             <p class="author" >Author: <%= post.author %></p>
             <p class="category">Category: <%= post.category %></p>
+            <p class="category">Category: <%= post.url %></p>
             <p class="content"><%= post.content %></p>
             <p><%= link_to 'Show', post %></p>
             <p><%= link_to 'Edit', edit_post_path(post) %></p>
