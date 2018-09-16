@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Post.destroy_all
-# Skill.destroy_all
+Skill.destroy_all
 
 # skill: name, detail, time, description
 
@@ -18,5 +18,10 @@ Post.create!(author: "Eric Shull", title: "Typeface Design", content: "This is a
 
 Post.create!(author: "Eric Shull", title: "Freespeak Brand Campaign", content: "Freespeak is an idea, brand and campaign all in one. I wanted to create something to foster a dialogue between people with opposing views. In addition to the brand, an app is in the works.", category: "Design", img_tag: "freespeak.png", url: "")
 
+Skill.create!(name: "Ruby", detail: "Programming Language", description: "Ruby is an object-oriented, general-purpose programming language. I really enjoy working in ruby because of it's simplified syntax. I also appreciate the organization of object-oriented programming.")
+
+Skill.create!(name: "Ruby on Rails", detail: "Web Application Framework on top of Ruby", description: "I really enjoy building applications in Rails. I find the structure and organization very intuitive. I have found the resources and community surrounding Rails is very involved and supportive.")
+
 
 p "Created #{Post.count} posts"
+p "Created #{Skill.count} skills"

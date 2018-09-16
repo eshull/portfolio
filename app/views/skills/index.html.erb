@@ -1,25 +1,29 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Skills</h1>
-<% @skills.each do |skill| %>
-  <div class="skill">
-    <div class="skill_image">
-      <h1>X Image Here X</h1>
-    </div>
-    <div class="skill_info">
-      <div class="info_box">
-        <div class="info">
-          <p class="title"><%= skill.name %></p>
-          <p class="author"><%= skill.detail %></p>
-          <p class="category">Description: <%= skill.description %></p>
-          <p><%= link_to 'Show', skill %></p>
-          <p><%= link_to 'Edit', edit_skill_path(skill) %></p>
-          <p><%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<div class="skill-column">
+  <%= link_to 'New Skill', new_skill_path %>
+  <p id="notice"><%= notice %></p>
+  <h1>Skills</h1>
+  <% @skills.each do |skill| %>
+    <div class="skill">
+      <div class="skill_image">
+        <h1>X</h1>
+      </div>
+      <div class="skill_info">
+        <div class="info_box">
+          <div class="info">
+            <p class="title"><%= skill.name %></p>
+            <p class="author"><%= skill.detail %></p>
+            <p class="category">Description: <%= skill.description %></p>
+            <p><%= link_to 'Show', skill %></p>
+            <p><%= link_to 'Edit', edit_skill_path(skill) %></p>
+            <p><%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
+
 <!-- <table>
   <thead>
     <tr>
@@ -39,5 +43,3 @@
 </table>
 
 <br> -->
-
-<%= link_to 'New Skill', new_skill_path %>

@@ -1,3 +1,54 @@
 // Place all the styles related to the skills controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$box-shadow: 20px 20px 50px black;
+$font-post:  gineso, sans-serif;
+
+input[type="submit"] {
+  background: #101115;
+  color: white;
+  font-family: gineso, sans-serif;
+  border: solid 1px white;
+  height: 80px;
+  width: 80px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.skill-column {
+  width: 70%;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-post;
+  background: #101115;
+  margin: 60px;
+  // border-radius: 25px;
+  padding: 30px;
+  color: #666666;
+  box-shadow: $box-shadow;
+  width: 30%;
+  float: right;
+}
+.skill h1 {
+  font-size: 80px;
+}
+
+.category {
+  line-height: 22px;
+}
+.form {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.input input {
+  width: 400px;
+  height: 50px;
+}

@@ -1,17 +1,37 @@
-<%= form_with(model: skill, local: true) do |form| %>
-  <% if skill.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(skill.errors.count, "error") %> prohibited this skill from being saved:</h2>
+<div class="form">
+  <%= form_with(model: skill, local: true) do |form| %>
+    <% if skill.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(skill.errors.count, "error") %> prohibited this skill from being saved:</h2>
 
-      <ul>
-      <% skill.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% skill.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="form-input">
+      <%= form_for @skill do |f| %>
+      <h3><%= f.label :name %></h3>
+      <div class="input">
+        <%= f.text_field :name %>
+      </div>
+      <h3><%= f.label :detail %></h3>
+      <div class="input">
+        <%= f.text_field :detail %>
+      </div>
+      <h3><%= f.label :description %></h3>
+      <div class="input">
+        <%= f.text_field :description %>
+      </div>
+      <div class="input">
+        <%= f.submit %>
+      </div>
+    <% end %>
+
     </div>
-  <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+
+  <% end %>
+</div>
