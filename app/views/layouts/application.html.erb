@@ -32,9 +32,13 @@
           <h2><%= link_to "Add New Post", new_post_path %></h2>
         </div>
       </div>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <%= yield %>
+      <div class="col-md-10">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+
+        <%= yield %>
+      </div>
+
     </div>
 
   </body>

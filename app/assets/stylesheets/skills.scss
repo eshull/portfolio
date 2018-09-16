@@ -16,7 +16,7 @@ input[type="submit"] {
 }
 
 .skill-column {
-  width: 70%;
+  width: 100%;
 }
 .skill {
   display: flex;
@@ -28,7 +28,7 @@ input[type="submit"] {
   padding: 30px;
   color: #666666;
   box-shadow: $box-shadow;
-  width: 30%;
+  width: 26%;
   float: right;
 }
 .skill h1 {

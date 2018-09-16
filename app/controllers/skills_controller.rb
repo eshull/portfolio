@@ -69,6 +69,7 @@ class SkillsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def skill_params
-      params.fetch(:skill, {})
+      params.require(:skill).permit(:name, :detail, :description)
+      # params.fetch(:skill :name, :detail, :description)
     end
 end
