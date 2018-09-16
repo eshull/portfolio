@@ -8,7 +8,7 @@
 Post.destroy_all
 # Skill.destroy_all
 
-# skill: name, language, time, description
+# skill: name, detail, time, description
 
 Post.create!(author: "Eric Shull", title: "Chord Progression Generator", content: "This application my group made generates a chord progression for guitar depending on the input. These two inputs are: key and scale. After selecting these two inputs, a chord progression for every musical genre is generated in the app.", category: "Development", img_tag: "chord.png", url: "https://eshull.github.io/chordprogressiongenerator/")
 

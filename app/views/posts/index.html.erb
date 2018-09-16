@@ -19,8 +19,8 @@
       <div class="post_info">
         <div class="info_box">
           <div class="info">
-            <p class="title">Title: <%= post.title %></p>
-            <p class="author" >Author: <%= post.author %></p>
+            <p class="title"><%= post.title %></p>
+            <p class="author" >By: <%= post.author %></p>
             <p class="category">Category: <%= post.category %></p>
             <p class="category"> <%= link_to post.url %></p>
             <p class="content"><%= post.content %></p>
@@ -29,17 +29,7 @@
             <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
           </div>
         </div>
-
-
-
-      <!-- <p class="author" >Author: <%= post.author %></p>
-      <p class="title">Title: <%= post.title %></p>
-      <p class="category">Category: <%= post.category %></p>
-      <p class="content"><%= post.content %></p>
-      <p><%= link_to 'Show', post %></p>
-      <p><%= link_to 'Edit', edit_post_path(post) %></p>
-      <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p> -->
-    </div>
+      </div>
     </div>
   <% end %>
 
