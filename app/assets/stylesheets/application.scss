@@ -29,12 +29,21 @@ button {
   width: 120px;
 }
 
+ .small {
+   margin-top: -29px;
+ }
+
+ .brand {
+   margin-top: 6px;
+ }
+
 .nav {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   margin-top: 30px;
   margin-left: 10px;
+  margin-right: 10px;
   background: #101115;
   color: white;
   font-family: gineso, sans-serif;
@@ -48,6 +57,24 @@ button {
   padding: 18px;
 }
 
-.postcolumn {
-  // background: #1a1e26;
+@media (max-width: 2000px) {
+  .nav {
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    padding: 0px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+
+  .nav-image {
+    width: 80px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-image {
+    display: none;
+  }
 }

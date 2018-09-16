@@ -127,3 +127,16 @@ $info-margin: 10px;
   margin-top: $info-margin;
   line-height: 23px;
 }
+
+@media (max-width: 2000px) {
+  .post {
+    flex-direction: column;
+  }
+  .post_image {
+    width: 100%
+  }
+  .post_info {
+    width: 100%
+  }
+
+ }
