@@ -20,7 +20,14 @@ body {
   background-image: linear-gradient(110deg, #1f2023, #101115, black);
 }
 
-
+button {
+  background: #101115;
+  color: white;
+  font-family: gineso, sans-serif;
+  border: solid 1px white;
+  height: 80px;
+  width: 120px;
+}
 
 .nav {
   position: -webkit-sticky; /* Safari */
