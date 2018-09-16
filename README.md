@@ -26,7 +26,9 @@ Show pictures of me and my kids
 #### Quick Learner:
 Show code projects I have made recently
 
+### Incorporating my Skills:
 
+I plan on adding the above skills into a section called about me. I might have this be a click on to show div on the main page of posts I have already created. I will match the skills with a persuasive photo that will tell a more complete story of who I am.
 
 
 
