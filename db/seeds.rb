@@ -18,6 +18,10 @@ Post.create!(author: "Eric Shull", title: "Typeface Design", content: "This is a
 
 Post.create!(author: "Eric Shull", title: "Freespeak Brand Campaign", content: "Freespeak is an idea, brand and campaign all in one. I wanted to create something to foster a dialogue between people with opposing views. In addition to the brand, an app is in the works.", category: "Design", img_tag: "freespeak.png", url: "")
 
+Post.create!(author: "Eric Shull", title: "Pizza Order Website", content: "A fun site I developed in Javascript to take pizza orders from customers. You can choose from three sizes of pizza, and four different toppings and this app will calculate your total and output your order at the bottom.", category: "Development", img_tag: "pizza.png", url: "https://eshull.github.io/pizza-shop/")
+
+Post.create!(author: "Eric Shull", title: "Moodify Spotify API", content: "A site that utilizes the Spotify API to grab songs based off of a custom algorithm. The algorithm we created has questions to determine your mood and match up these parameters to the endpoints in the API.", category: "Development", img_tag: "moodify.png", url: "https://moodify-eb330.firebaseapp.com/")
+
 Skill.create!(name: "Ruby", detail: "Programming Language", description: "Ruby is an object-oriented, general-purpose programming language. I really enjoy working in ruby because of it's simplified syntax. I also appreciate the organization of object-oriented programming.")
 
 Skill.create!(name: "Ruby on Rails", detail: "Web Application Framework on top of Ruby", description: "I really enjoy building applications in Rails. I find the structure and organization very intuitive. I have found the resources and community surrounding Rails is very involved and supportive.")
