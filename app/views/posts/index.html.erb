@@ -7,9 +7,32 @@
     <h2>DESIGN</h2>
   </div>
 </div>
-
+<%= link_to "Sort Design", posts_path(:sort_by => 'Design') %>
+<%= link_to "Sort Develop", posts_path(:sort_by => 'Develop') %>
 
   <% @posts.each do |post| %>
+    <div class="post">
+      <div class="post_image">
+        <%= image_tag( post.img_tag, :alt => "type", :class => "img-fluid") %>
+      </div>
+      <div class="post_info">
+        <div class="info_box">
+          <div class="info">
+            <p class="title"><%= post.title %></p>
+            <p class="author" >By: <%= post.author %></p>
+            <p class="category">Category: <%= post.category %></p>
+            <p class="category"> <%= link_to post.url %></p>
+            <p class="content"><%= post.content %></p>
+            <p><%= link_to 'Show', post %></p>
+            <p><%= link_to 'Edit', edit_post_path(post) %></p>
+            <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <% Post.sort_design.each do |post| %>
     <div class="post">
       <div class="post_image">
         <%= image_tag( post.img_tag, :alt => "type", :class => "img-fluid") %>
