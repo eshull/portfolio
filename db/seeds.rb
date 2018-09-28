@@ -26,6 +26,10 @@ Skill.create!(name: "Ruby", detail: "Programming Language", description: "Ruby i
 
 Skill.create!(name: "Ruby on Rails", detail: "Web Application Framework on top of Ruby", description: "I really enjoy building applications in Rails. I find the structure and organization very intuitive. I have found the resources and community surrounding Rails is very involved and supportive.")
 
+Skill.create!(name: "Typography", detail: "Typography for Layout and Web Design", description: "I studied many aspects of typography while I was in school for design. I spent a year doing a deep dive into typeface creation, and I really honed my skill of using typefaces in my designs.")
+
+Skill.create!(name: "CSS", detail: "CSS for Web Design", description: "I really enjoy using CSS in my web designs. I find it to be a very versatile and interesting language.")
+
 
 p "Created #{Post.count} posts"
 p "Created #{Skill.count} skills"
