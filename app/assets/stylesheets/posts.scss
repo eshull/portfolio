@@ -136,5 +136,31 @@ $info-margin: 10px;
   .post_info {
     width: 100%
   }
+  .header h2 {
+    font-size: 30px;
+  }
+
+ }
+
+@media (max-width: 1300px) {
+  .header h2 {
+    font-size: 20px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    align-items: center;
+  }
+  .des_header {
+    margin-left: 0px;
+    width: 50%;
+    margin-top: 25px;
+  }
+  .dev_header {
+    margin-right: 0px;
+    width: 50%;
+  }
 
  }
