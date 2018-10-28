@@ -85,6 +85,13 @@ img {
   font-size: 25px;
 }
 
+.footer {
+  height: 200px;
+  background-color: #101115;
+  border-top: solid white 1px;
+  width: 100%;
+}
+
 @media (max-width: 2000px) {
   .nav {
     width: 98%;
@@ -104,5 +111,18 @@ img {
 @media (max-width: 600px) {
   .nav-image {
     display: none;
+  }
+  .navbar-text h2 {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .small {
+    margin-top: -20px;
+  }
+
+  .nav {
+    height: 80px;
+    width: 93%;
   }
 }

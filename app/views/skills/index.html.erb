@@ -14,9 +14,11 @@
             <p class="title"><%= skill.name %></p>
             <p class="author"><%= skill.detail %></p>
             <p class="category">Description: <%= skill.description %></p>
-            <p><%= link_to 'Show', skill %></p>
-            <p><%= link_to 'Edit', edit_skill_path(skill) %></p>
-            <p><%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <% if @user && @user.admin %>
+              <p><%= link_to 'Show', skill %></p>
+              <p><%= link_to 'Edit', edit_skill_path(skill) %></p>
+              <p><%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <% end %>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ Post.create!(author: "Eric Shull", title: "Moodify Spotify API", content: "A sit
 
 Skill.create!(name: "Ruby", detail: "Programming Language", description: "Ruby is an object-oriented, general-purpose programming language. I really enjoy working in ruby because of it's simplified syntax. I also appreciate the organization of object-oriented programming.")
 
-Skill.create!(name: "Ruby on Rails", detail: "Web Application Framework on top of Ruby", description: "I really enjoy building applications in Rails. I find the structure and organization very intuitive. I have found the resources and community surrounding Rails is very involved and supportive.")
+Skill.create!(name: "Rails", detail: "Web Application Framework on top of Ruby", description: "I really enjoy building applications in Rails. I find the structure and organization very intuitive. I have found the resources and community surrounding Rails is very involved and supportive.")
 
 Skill.create!(name: "Typography", detail: "Typography for Layout and Web Design", description: "I studied many aspects of typography while I was in school for design. I spent a year doing a deep dive into typeface creation, and I really honed my skill of using typefaces in my designs.")
 
