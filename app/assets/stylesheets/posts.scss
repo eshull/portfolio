@@ -99,9 +99,10 @@ $info-margin: 10px;
 .author {
   font-family: $font-post;
   font-style: italic;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 22px;
   margin-top: $info-margin;
+  line-height: 28px;
 }
 
 .category {
@@ -162,9 +163,13 @@ $info-margin: 10px;
     font-size: 30px;
   }
 
+  .col-md-10 {
+    width: 100%;
+    margin-left: 100px;
+  }
  }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .header h2 {
     font-size: 20px;
   }
@@ -181,8 +186,18 @@ $info-margin: 10px;
     margin-top: 25px;
   }
   .dev_header {
-    margin-right: 0px;
     width: 60%;
   }
 
- }
+  .col-md-10 {
+    width: 100%;
+    margin-left: 30px;
+  }
+}
+
+
+  @media (max-width: 600px) {
+    .info .title {
+      font-size: 41px;
+    }
+  }
