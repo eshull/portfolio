@@ -10,13 +10,12 @@ class Post < ApplicationRecord
   end
 end
 
-scope :sort_design, -> {(
-    select("posts.id, posts.author, posts.title, posts.content, posts.category, posts.img_tag, posts.url")
-    .where(category: "Design")
+  scope :sort_design, -> {(
+    select("posts.id, posts.author, posts.title, posts.content, posts.category, posts.img_tag, posts.url").where(category: "Design")
     )}
 
   scope :sort_develop, -> {(
-    select("posts.id, posts.author, posts.title, posts.content, posts.category, posts.img_tag, posts.url")
+    select("posts.id, posts.author, posts.title, posts.content, posts.category, posts.img_tag, posts.url").where(category: "Development")
     )}
 
 end

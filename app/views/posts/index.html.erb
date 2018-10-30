@@ -6,7 +6,7 @@
 </div>
 
 
-  <% @posts.each do |post| %>
+  <% @development_posts.each do |post| %>
     <div class="post">
       <div class="post_image">
         <%= image_tag( post.img_tag, :alt => "type", :class => "img-fluid") %>
@@ -30,7 +30,7 @@
     </div>
   <% end %>
 
-  <% Post.sort_design.each do |post| %>
+  <% @design_posts.each do |post| %>
     <div class="post">
       <div class="post_image">
         <%= image_tag( post.img_tag, :alt => "type", :class => "img-fluid") %>
@@ -43,7 +43,7 @@
             <p class="category">Category: <%= post.category %></p>
             <a class="category-link"> <%= link_to post.url %></a>
             <p class="content"><%= post.content %></p>
-            <p><%= link_to 'Show', post %></p>
+            <p><%= link_to 'Project Details', post %></p>
             <% if @user.admin? %>
               <p><%= link_to 'Edit', edit_post_path(post) %></p>
               <p><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>

@@ -32,6 +32,8 @@ Skill.create!(name: "CSS", detail: "CSS for Web Design", description: "I really 
 
 Skill.create!(name: "Lutherie", detail: "Instrument Building", description: "I have a business where I build and fix instruments. I mostly focus on instruments before the 1800's.")
 
+Skill.create!(name: "Branding", detail: "Branding Design", description: "I have a degree in Graphic Design, and branding is one aspect of design I really enjoy.")
+
 
 p "Created #{Post.count} posts"
 p "Created #{Skill.count} skills"

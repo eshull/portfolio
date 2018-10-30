@@ -86,10 +86,14 @@ img {
 }
 
 .footer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
   height: 200px;
   background-color: #101115;
   border-top: solid white 1px;
   width: 100%;
+  color: white;
 }
 
 @media (max-width: 2000px) {
@@ -129,5 +133,10 @@ img {
   .col-md-10 {
     width: 100%;
     margin-left: 20px;
+  }
+
+  .dev_header h2 {
+    font-size: 18px;
+    line-height: 22px;
   }
 }

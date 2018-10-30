@@ -26,9 +26,23 @@ $info-margin: 10px;
   background: $btn-background;
   // border-radius: 12px;
   border: solid 1px white;
-  padding: 30px;
+  padding: 10px 50px 10px 50px;
   color: white;
-  width: 50%;
+  width: 60%;
+  box-shadow: $box-shadow;
+  margin-right: 55px;
+}
+
+.skill_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: $btn-background;
+  // border-radius: 12px;
+  border: solid 1px white;
+  padding: 10px 50px 10px 50px;
+  color: white;
+  width: 40%;
   box-shadow: $box-shadow;
   margin-right: 55px;
 }
@@ -40,7 +54,7 @@ $info-margin: 10px;
   background: $btn-background;
   // border-radius: 12px;
   border: solid 1px white;
-  padding: 30px;
+  padding: 10px;
   color: white;
   width: 25%;
   box-shadow: $box-shadow;
@@ -167,11 +181,17 @@ $info-margin: 10px;
     width: 100%;
     margin-left: 100px;
   }
+
+
  }
 
 @media (max-width: 1400px) {
   .header h2 {
     font-size: 20px;
+  }
+
+  .dev_header h2 {
+    font-size: 28px;
   }
   .header {
     display: flex;
@@ -186,7 +206,7 @@ $info-margin: 10px;
     margin-top: 25px;
   }
   .dev_header {
-    width: 60%;
+    width: 70%;
   }
 
   .col-md-10 {
@@ -196,7 +216,7 @@ $info-margin: 10px;
 }
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .info .title {
       font-size: 41px;
     }

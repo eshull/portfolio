@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    @design_posts = Post.sort_by("Design")
+    @development_posts = Post.sort_by("Development")
     @posts = Post.all
     @users = User.all
     @user = @users.new(params[:id])

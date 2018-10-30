@@ -1,8 +1,15 @@
 
-
+<% if @user && @user.admin %>
   <%= link_to 'New Skill', new_skill_path %>
+<% end %>
+
+<div class="header row ">
+  <div class="skill_header">
+    <h2>SKILLS</h2>
+  </div>
+</div>
+
   <p id="notice"><%= notice %></p>
-  <h1>Skills</h1>
   <% @skills.each do |skill| %>
     <div class="skill">
       <div class="skill_image">
