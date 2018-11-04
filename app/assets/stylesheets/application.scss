@@ -28,6 +28,9 @@ a {
 a:visited {
   color: #333bb7;
 }
+a:hover {
+  text-decoration: none;
+}
 
 button {
   background: #101115;
@@ -60,14 +63,18 @@ img {
   background: #101115;
   color: white;
   font-family: gineso, sans-serif;
-  border: solid 1px white;
+  // border: solid 2px #666666;
   height: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 20px 20px 50px black;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 14%;
   padding: 18px;
+}
+
+.navbar-text {
+  margin-left: 35px;
 }
 
 .title {
@@ -91,9 +98,8 @@ img {
   flex-direction: column;
   height: 200px;
   background-color: #101115;
-  border-top: solid white 1px;
   width: 100%;
-  color: white;
+  color: #666666;
 }
 
 @media (max-width: 2000px) {
@@ -112,7 +118,7 @@ img {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .nav-image {
     display: none;
   }
@@ -138,5 +144,9 @@ img {
   .dev_header h2 {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .navbar-text {
+    margin-left: 20px;
   }
 }
